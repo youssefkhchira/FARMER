@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#174b33">
+<meta name="description" content="Register and manage your farm animals: IDs, births, health, vaccinations and calendar.">
+<title>Herdbook</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23174b33'/%3E%3Cpath d='M14 24 32 10l18 14v22a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4z' fill='%2379c99b'/%3E%3Ccircle cx='32' cy='30' r='5' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Cairo:wght@400;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'herd/css/app.css' %}">
+<script defer src="{% static 'herd/js/constants.js' %}"></script>
+<script defer src="{% static 'herd/js/translations.js' %}"></script>
+<script defer src="{% static 'herd/js/app.js' %}"></script>
+</head>
+<body>
+<div id="app"></div>
+<div id="modal"></div>
+<div id="toast" role="status" aria-live="polite"><span></span></div>
+</body>
+</html>
